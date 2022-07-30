@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <title>Movie</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MovieCG</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Phim mới</li> <!--Learn ???-->
+                    <li class="menu-list-item">Thể loại</li>
+                    <li class="menu-list-item">Phim bộ</li>
+                    <li class="menu-list-item">Phim lẻ</li>
+                    <li class="menu-list-item">Phim hot</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="./assets/img/CuongDz.jpg" alt="" >
+                <div class="profile-text-container">
+                    <span class="profile-text">Hồ sơ</span>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <!--Cl-->
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-house-chimney"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0, 0, 0,0), #151515), 
+            url('./assets/img/f-1.jpg');"
+            >
+                <img class="featured-title" src="./assets/img/f-t-1.png">
+                <p class="featured-desc">
+                    Lấy bối cảnh vào năm 1858, Tarantino đưa người xem tới nước Mỹ thời điểm hai năm trước cuộc nội chiến, khi mà người da màu vẫn bị phân biệt đối xử, bị coi là nô lệ. Django (Jamie Foxx thủ vai) là một người như vậy và có lẽ anh sẽ mãi phải sống kiếp đày đọa nếu không gặp vị nha sĩ người Đức King Schultz (Christoph Waltz). Sau khi giải thoát cho Django, Schultz giải thích rằng mình thực chất là một kẻ săn tiền thưởng và cần sự hỗ trợ của Django để truy tìm ba kẻ mà anh quen biết
+                </p>
+                <button class="featured-button">XEM PHIM</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Phim sắp ra mắt</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z2.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z3.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z4.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z5.png" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z6.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z7.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0, 0, 0,0), #151515), 
+            url('./assets/img/f-2.jpg');"
+            >
+                <img class="featured-title" src="./assets/img/f-t-2.png">
+                <p class="featured-desc">
+                    Được ví là phép cộng giữa "13 Reasons Why" và "Stranger Thing" mang đậm phong cách dòng phim tâm lý bí ẩn cuốn hút của Netflix, "Dark" lấy bối cảnh tại một thị trấn nhỏ giữa nước Đức, nơi những hiện tượng siêu nhiên kỳ lạ liên tục diễn ra, và sự biến mất của 2 đứa trẻ đã khiến cư dân nơi đây đặt dấu hỏi giữa vụ án này với những sự việc kỳ bí kia.
+                </p>
+                <button class="featured-button">XEM PHIM</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">PHIM CHIẾU RẠP</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z8.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z9.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z10.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z11.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z12.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z13.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z14.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">PHIM BỘ MỚI CẬP NHẬT</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z15.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z16.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z17.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z18.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z19.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z20.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z21.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">PHIM THỊNH HÀNH</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z22.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z23.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z24.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z25.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z26.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z27.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">heodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./assets/img/z28.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Theodore là một nhà văn cô đơn, hướng nội, làm nghề viết thư tình cho những người gặp khó khăn trong việc biểu lộ cảm xúc</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

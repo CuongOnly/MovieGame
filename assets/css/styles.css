@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    /*height of header */
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+
+}
+
+.logo-container{
+    flex: 1; /*Learn ??*/
+}
+
+.menu-container{
+    flex: 6; /*Learn ??*/
+}
+
+.navbar-container .menu-container .menu-list{
+    display:flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menu-container .menu-list .menu-list-item{
+    margin-right: 30px;
+}
+
+.menu-list-item.active{ /*Learn ??*/
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 2; /*Learn ??*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /*move DARK to the right*/
+
+}
+
+.navbar-container .profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover; /*Learn ??*/
+}
+
+.profile-container .profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-container .toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    /*Dark căn giữa*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.profile-container .toggle .toggle-icon{
+    color: goldenrod;
+    padding: 2px;
+}
+
+.profile-container .toggle .toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+
+
+.sidebar{
+        /*it is placed along the left margin*/
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    /*Option Icon to the sidebar*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*Icon between*/
+    padding-top: 60px;
+}
+.navbar-container .logo-container .logo{
+    font-size: 30px;
+    color: #4dbf00
+} 
+
+.sidebar .left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/*CONTAINER*/
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px); /* Chiều cao tối thiểu Learn ??*/
+    color: white;
+}
+
+.container .content-container{
+    margin-left: 50px;
+}
+
+.container .content-container .featured-content{
+    height: 50vh;
+    background-color: tomato;
+    padding: 50px;
+}
+
+.container .content-container .featured-title{
+    width: 200px;
+
+}
+
+.container .content-container .featured-desc{
+    width: 500px;
+    color: gray;
+    margin: 30px 0;
+}
+
+.container .content-container .featured-button{
+    background-color: #4dbf00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold; /*Learn ???*/
+}
+
+
+/*LIST MOVIE*/
+.movie-list-container{
+    padding: 0 20px;
+}
+
+.movie-list-container .movie-list-wrapper{
+    position: relative; /*Thẻ cha vitri tuyệt đối*/
+    overflow: hidden; /*js ko bị tràn*/
+}
+
+.movie-list-container .movie-list-wrapper .movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px; /*Consider the length for the horizontal row*/
+    transform: translateX(0); /*Js*/
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-container .movie-list .movie-list-item{
+    margin-right: 30px;
+    position: relative; /*impositian to use position: absolute; */
+
+}
+
+.movie-list .movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2); /*Learn ???*/
+    margin: 0 30px; /*Cho các ảnh cách ra khi hiện animation*/
+    opacity: 0.5; /*Độ mờ*/
+}
+
+.movie-list .movie-list-item:hover .movie-list-item-title,
+.movie-list .movie-list-item:hover .movie-list-item-desc,
+.movie-list .movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+
+.movie-list .movie-list-item .movie-list-item-img{
+    transition: all 1s ease-in-out; /*Learn ???*/
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.movie-list .movie-list-item .movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out; /*Learn /??*/
+}
+
+.movie-list .movie-list-item .movie-list-item-desc{
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out; /*Learn /??*/
+}
+
+.movie-list .movie-list-item .movie-list-item-button{
+    padding: 10px;
+    background-color: #3dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out; /*Learn /??*/
+}
+
+.movie-list-container .movie-list-wrapper .arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 85px;
+    right: 0; /*Sang phải hết cỡ*/
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* White Toggle*/
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+    background-color: white;
+}
+.sidebar .left-menu-icon.active{
+    color: black;
+}
+
+.profile-container .toggle.active{
+    background-color: black;
+}
+
+.profile-container .toggle .toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px); /*Toggel movie left or "left: 1;"*/
+}
+
+/*Reponsive*/
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
